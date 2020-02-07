@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  margin: 110px;
+}
+
+.page-404 {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: 'Gothic725BdBT', sans-serif;
+  text-transform: uppercase;
+  border: solid 15px white;
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 70px 5px rgba(255,255,255,0.7);
+}
+
+.page-404 p {
+  font-size: 300px;
+  margin: 0;
+}
+
+.page-404 span {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 1500px) {
+  .page-404 {
+    padding-bottom: 30px;
+  }
+  
+  .page-404 p {
+    font-size: 200px;
+  }
+  
+  .page-404 span {
+  font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .page-404 {
+    padding-bottom: 15px;
+  }
+  
+  .page-404 p {
+    font-size: 100px;
+  }
+  
+  .page-404 span {
+  font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0;
+  }
+  
+  .page-404 {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.page-404 {
+    animation: zoom 5s infinite ;
+}
